@@ -26,14 +26,18 @@ class TaskPreview extends StatelessWidget {
       backgroundColor: AppColors.primarySecondaryBackground,
       appBar: reusableAppBar(context),
       body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 12),
+        padding: const EdgeInsets.symmetric(
+          horizontal: 12,
+        ),
         child: SingleChildScrollView(
           child: Column(
             children: [
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  const ReusableHeadingText(text: 'Task Preview'),
+                  const ReusableHeadingText(
+                    text: 'Task Preview',
+                  ),
                   Container(
                     decoration: const BoxDecoration(
                       shape: BoxShape.circle,

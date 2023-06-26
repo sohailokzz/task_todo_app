@@ -15,7 +15,9 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppColors.primarySecondaryBackground,
       body: Padding(
-        padding: const EdgeInsets.all(12.0),
+        padding: const EdgeInsets.all(
+          12.0,
+        ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -41,7 +43,9 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
                 child: Padding(
-                  padding: const EdgeInsets.only(left: 8),
+                  padding: const EdgeInsets.only(
+                    left: 8,
+                  ),
                   child: Center(
                     child: ListTile(
                       leading: Image.asset(

@@ -19,7 +19,10 @@ class TasksList extends StatelessWidget {
       backgroundColor: AppColors.primarySecondaryBackground,
       appBar: reusableAppBar(context),
       body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+        padding: const EdgeInsets.symmetric(
+          horizontal: 16,
+          vertical: 8,
+        ),
         child: Column(
           children: [
             Row(
@@ -74,7 +77,9 @@ class TasksList extends StatelessWidget {
                         ),
                       ),
                       child: Padding(
-                        padding: const EdgeInsets.only(left: 8),
+                        padding: const EdgeInsets.only(
+                          left: 8,
+                        ),
                         child: Center(
                           child: ListTile(
                             trailing: IconButton(

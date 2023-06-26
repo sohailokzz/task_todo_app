@@ -46,7 +46,9 @@ class _AddNewTaskState extends State<AddNewTask> {
       backgroundColor: AppColors.primarySecondaryBackground,
       appBar: reusableAppBar(context),
       body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 16),
+        padding: const EdgeInsets.symmetric(
+          horizontal: 16,
+        ),
         child: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -166,16 +168,17 @@ class _AddNewTaskState extends State<AddNewTask> {
                 buttonTitle: 'Submit',
                 onTap: () {
                   Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => TaskPreview(
-                          task: taskController.text,
-                          type: type!,
-                          priority: priority!,
-                          timeframe: timeFrame!,
-                          description: descriptionController.text,
-                        ),
-                      ));
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => TaskPreview(
+                        task: taskController.text,
+                        type: type!,
+                        priority: priority!,
+                        timeframe: timeFrame!,
+                        description: descriptionController.text,
+                      ),
+                    ),
+                  );
                 },
               ),
               12.myPh,
